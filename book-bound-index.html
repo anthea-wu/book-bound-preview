@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書途同歸 | 讓好書遇見下一個主人</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #faf9f8;
+            color: #4a4a4a;
+        }
+
+        .theme-bg { background-color: #84a59d; }
+        .theme-text { color: #84a59d; }
+        .theme-border { border-color: #84a59d; }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .custom-shadow {
+            box-shadow: 0 10px 25px -5px rgba(132, 165, 157, 0.2);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-between p-6">
+
+    <!-- Header Removed per request -->
+    <div class="h-12 w-full"></div>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex flex-col items-center justify-center text-center max-w-2xl px-4">
+
+        <!-- Animated Illustration Placeholder -->
+        <div class="mb-12 animate-float relative">
+            <!-- 裝飾性的背景光暈 -->
+            <div class="absolute -inset-4 theme-bg opacity-20 blur-3xl rounded-full"></div>
+            <!-- 顏色互換：背景改為主題色，圖示改為白色 -->
+            <div class="relative theme-bg p-8 rounded-[2.5rem] shadow-xl inline-block">
+                <i data-lucide="library-big" class="w-24 h-24 text-white opacity-90"></i>
+            </div>
+        </div>
+
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight theme-text">
+            讓每一本書<br>都可以有一個新的歸宿
+        </h1>
+
+        <p class="text-lg md:text-xl text-gray-500 mb-10 leading-relaxed font-light">
+            這裡是書途同歸，一個二手書交換平台<br>
+            致力於打造一個<b>上架簡單、交換方便</b>的環境。
+        </p>
+
+        <p class="text-lg md:text-xl text-gray-500 mb-6 leading-relaxed font-light">
+            平台開發中，第一階段預計將於過年前上線。<br>
+            歡迎透過以下方式取得最新資訊：
+        </p>
+
+        <!-- Social / Icons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <!-- Threads -->
+            <a href="https://www.threads.net/@__book.bound" target="_blank" class="flex items-center space-x-2 px-6 py-3 bg-white rounded-full custom-shadow text-gray-600 hover:theme-text transition-all duration-300 group min-w-[160px] justify-center">
+                <i data-lucide="at-sign" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
+                <span class="font-medium">Threads</span>
+            </a>
+
+            <!-- Newsletter -->
+            <a href="https://book-bound.kit.com" target="_blank" class="flex items-center space-x-2 px-6 py-3 bg-white rounded-full custom-shadow text-gray-600 hover:theme-text transition-all duration-300 group min-w-[160px] justify-center">
+                <i data-lucide="mail" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
+                <span class="font-medium">訂閱電子報</span>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-8 text-center">
+        <div class="text-gray-400 text-sm">
+            <p>© 2025 書途同歸. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
